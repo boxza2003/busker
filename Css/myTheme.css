@@ -1,0 +1,41 @@
+﻿body {
+    background-color: #FFFBF5;
+}
+
+/*上方Header > Menu*/
+.header-area .main-header-area {
+   /* background-color: #cacdcc;*/
+}
+
+/*上方Header > Menu > 文字*/
+.header-area .main-header-area .main-menu ul li a {
+    /*color:#444;*/
+    font-size: 20px;
+}
+
+/*上方Header > Menu > 回到最上面的文字*/
+.header-area .main-header-area .say_hello a {
+    /*color :#795151;*/
+}
+/*上方Header > Menu > 回到最上面的文字的下底線*/
+.header-area .main-header-area .say_hello a::before {
+    /*background-color:#666;*/
+}
+
+/*內容 > 第一區塊 > 輪播背景圖片*/
+.slider_bg_3 {
+    background-image: url(../img/banner/banner3.png);
+}
+
+/*內容 > 第二區塊 > ICON*/
+.about_area .icon_2{
+    bottom:3%;
+}
+
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    /*上方Header > Menu > 文字*/
+    .header-area .main-header-area .main-menu ul li a {
+        font-size:20px;
+    }
+}
