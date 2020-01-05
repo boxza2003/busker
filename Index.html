@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="BUSKER.Contact" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="BUSKER.Index" %>
 
 <!DOCTYPE html>
 
@@ -22,11 +22,10 @@
     <link rel="stylesheet" href="css/gijgo.css" />
     <link rel="stylesheet" href="css/nice-select.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/slicknav.css" />
 
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/myTheme.css" />
     <asp:Literal ID="myLiteral" runat="server"></asp:Literal>
 </head>
 <body>
@@ -58,7 +57,9 @@
                                                 <li><a class="active" href="Index.aspx">首頁</a></li>
                                                 <li><a href="Menu.aspx">菜單</a></li>
                                                 <li><a href="About.aspx">關於本店</a></li>
-                                                <%--<li><a href="#">關於本店 <i class="ti-angle-down"></i></a>
+                                                <%--
+                                                <li>
+                                                    <a href="#">關於本店 <i class="ti-angle-down"></i></a>
                                                     <ul class="submenu">
                                                         <li><a href="">本店位置</a></li>
                                                     </ul>
@@ -85,80 +86,110 @@
             </div>
         </header>
         <!-- End header -->
-
         <!-- Start 第一區塊 -->
-        <div class="bradcam_area bradcam_bg_3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="bradcam_text text-center">
-                            <h3>聯絡我們</h3>
+        <div class="slider_area">
+            <div class="slider_active owl-carousel">
+                <!--1.-->
+                <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-xl-9 col-md-9 col-md-12">
+                                <div class="slider_text text-center">
+                                    <h3>
+                                        一位歌手開的<br />
+                                        自家手工精品咖啡.
+                                    </h3>
+                                    <%--<a href="menu.html" class="boxed-btn3">View Menus</a>--%>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!--2.-->
+                <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-xl-9 col-md-9 col-md-12">
+                                <div class="slider_text text-center">
+                                    <h3>
+                                        一位歌手開的<br />
+                                        自家手工精品咖啡.
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--3.-->
+                <div class="single_slider  d-flex align-items-center slider_bg_3 overlay">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-xl-9 col-md-9 col-md-12">
+                                <div class="slider_text text-center">
+                                    <h3>
+                                        一位歌手開的<br />
+                                        自家手工精品咖啡.
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!-- End 第一區塊 -->
-
         <!-- Start 第二區塊 -->
-        <div class="whole-wrap">
-            <div class="container box_1170">
-                <!--information-->
-                <div class="section-top-border">
-                    <h3 class="mb-30"></h3>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <blockquote class="generic-blockquote">
-                                <table>
-                                    <tr>
-                                        <td colspan="2">本店位置</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">237 新北市三峽區弘園街33號</td>
-                                    </tr>
-                                    <tr><td><br /></td></tr>
-                                    <tr>
-                                        <td colspan="2">聯絡電話</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2">0935-627-895</td>
-                                    </tr>
-                                    <tr><td><br /></td></tr>
-                                    <tr>
-                                        <td>營業時間</td>
-                                    </tr>
-                                    <tr>
-                                        <td>週&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一：</td>
-                                        <td>公&nbsp;&nbsp;休</td>
-                                    </tr>
-                                    <tr>
-                                        <td>週二&nbsp;~&nbsp;週六：</td>
-                                        <td>10:00 – 22:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>週&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日：</td>
-                                        <td>19:00 – 23:30</td>
-                                    </tr>
-                                    <tr><td><br /></td></tr>
-                                    <tr>
-                                        <td colspan="2"><a href="https://zh-tw.facebook.com/buskercafe" target="_blank"><img src="Img/icon/facebook-fb-7511.ico" alt="FB粉絲團" title="FB粉絲團" style="width:24px;height:24px;"/></a></td>
-                                    </tr>
+        <div class="about_area">
+            <div class="icon_1 d-none d-md-block">
+                <img src="img/icon/coffee_beans.png" alt="" />
+            </div>
+            <div class="icon_2 d-none d-md-block">
+                <img src="img/icon/coffee_cup.png" alt="" />
+            </div>
+            <div class="icon_3 d-none d-md-block">
+                <img src="img/icon/coffee_beans.png" alt="" />
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about_info_wrap">
+                            <h3>
+                                Coffee Title
+                                <br />
+                                This is my title
+                            </h3>
+                            <span class="long_dash"></span>
+                            <p>Say anything about your coffee.</p>
 
-                                </table>
-                            </blockquote>
+                            <%--<ul class="food_list">
+                                <li>
+                                    <img src="img/svg_icon/salad.svg" alt="" />
+                                    <span>Fresh Ingredients</span>
+                                </li>
+                                <li>
+                                    <img src="img/svg_icon/tray.svg" alt="" />
+                                    <span>Expert cooker</span>
+                                </li>
+                            </ul>--%>
                         </div>
-                        <div class="col-lg-6">
-                            <!-- Start Map -->
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14472.539782462507!2d121.3672891!3d24.9274724!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6a96a1bc1ee4e3b5!2z5YWr6K2Y5a6i5ZKW5ZWh6aSo!5e0!3m2!1szh-TW!2stw!4v1577687612878!5m2!1szh-TW!2stw" style="width: 100%; max-width: 600px; height: 450px;" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
-                            <!-- End Map -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about_img">
+                            <div class="img_1">
+                                <img src="img/about/big.png" alt="" />
+                            </div>
+                            <%--<div class="small_img">
+                                <img src="img/about/small.png" alt="" />
+                            </div>--%>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End 第二區塊 -->
-
-
         <!-- Start footer  -->
         <footer class="footer">
             <div class="copy-right_text">
@@ -167,7 +198,8 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <p class="copy_right text-center">
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script>
                                 All rights reserved.
                             </p>
                         </div>
@@ -193,11 +225,11 @@
     <script src="js/scrollIt.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
     <script src="js/nice-select.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/plugins.js"></script>
-    <script src="js/gijgo.min.js"></script>
 
     <!--contact js-->
     <script src="js/contact.js"></script>
